@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "837478876802",
+    "firebase_url": "https://myuserreg-605ba.firebaseio.com",
+    "project_id": "myuserreg-605ba",
+    "storage_bucket": "myuserreg-605ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837478876802:android:8c824bc56c897603",
+        "android_client_info": {
+          "package_name": "com.example.user.healthsupervisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837478876802-v6jqnvi93fhv7rrb5e8ku6gs7co6vect.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNkjMrVFHFbLikduKYIMly-9KDvY-8erc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

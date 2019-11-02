@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7ee88"
+    tools:context="com.example.user.healthsupervisor.Tutorial">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout3">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_tutorial"
+        android:layout_alignBottom="@+id/fab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <Button
+        android:id="@+id/warmup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/abs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:text="Warm Up" />
+
+    <Button
+        android:id="@+id/abs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upperbody"
+        android:layout_alignLeft="@+id/warmup"
+        android:layout_alignStart="@+id/warmup"
+        android:layout_marginBottom="13dp"
+        android:text="Abs" />
+
+    <Button
+        android:id="@+id/upperbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/abs"
+        android:layout_alignStart="@+id/abs"
+        android:layout_centerVertical="true"
+        android:text="Upper Body" />
+
+    <Button
+        android:id="@+id/lowerbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/upperbody"
+        android:layout_alignRight="@+id/upperbody"
+        android:layout_below="@+id/upperbody"
+        android:layout_marginTop="20dp"
+        android:text="Lower Body" />
+
+    <Button
+        android:id="@+id/firstaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yoga"
+        android:layout_alignLeft="@+id/lowerbody"
+        android:layout_alignStart="@+id/lowerbody"
+        android:layout_marginBottom="11dp"
+        android:text="First Aid" />
+
+    <Button
+        android:id="@+id/yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab"
+        android:layout_alignLeft="@+id/firstaid"
+        android:layout_alignStart="@+id/firstaid"
+        android:layout_marginBottom="12dp"
+        android:text="Yoga" />
+
+</RelativeLayout>
